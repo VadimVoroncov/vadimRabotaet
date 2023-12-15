@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b0a5989ceb70477b8fa0b72429c63f4e" Name="Diagram1">
+        <EntityTypeShape EntityType="vadimRabotaetModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="vadimRabotaetModel.Адрес" Width="1.5" PointX="0.75" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="vadimRabotaetModel.Должность" Width="1.5" PointX="5.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="vadimRabotaetModel.Ед__измерения" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="vadimRabotaetModel.Заказ" Width="1.5" PointX="3" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="vadimRabotaetModel.Категоря_товров" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="vadimRabotaetModel.Клиент" Width="1.5" PointX="0.75" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="vadimRabotaetModel.ПодробностиЗаказа" Width="1.5" PointX="5.25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="vadimRabotaetModel.Сотрудник" Width="1.5" PointX="8" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="vadimRabotaetModel.Способ_оплаты" Width="1.5" PointX="0.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="vadimRabotaetModel.Статус_заказа" Width="1.5" PointX="0.75" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="vadimRabotaetModel.Страна_произваодителя" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="vadimRabotaetModel.Товар" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="vadimRabotaetModel.Фирма" Width="1.5" PointX="0.75" PointY="10.125" IsExpanded="true" />
+        <AssociationConnector Association="vadimRabotaetModel.FK_Заказ_Адрес" ManuallyRouted="false" />
+        <AssociationConnector Association="vadimRabotaetModel.FK_Сотрудник_Должность" ManuallyRouted="false" />
+        <AssociationConnector Association="vadimRabotaetModel.FK_Товар_Ед__измерения" ManuallyRouted="false" />
+        <AssociationConnector Association="vadimRabotaetModel.FK_Заказ_Клиент" ManuallyRouted="false" />
+        <AssociationConnector Association="vadimRabotaetModel.FK_Заказ_Способ_оплаты" ManuallyRouted="false" />
+        <AssociationConnector Association="vadimRabotaetModel.FK_Заказ_Статус_заказа" ManuallyRouted="false" />
+        <AssociationConnector Association="vadimRabotaetModel.FK_ПодробностиЗаказа_Заказ" ManuallyRouted="false" />
+        <AssociationConnector Association="vadimRabotaetModel.FK_Товар_Категоря_товров" ManuallyRouted="false" />
+        <AssociationConnector Association="vadimRabotaetModel.FK_ПодробностиЗаказа_Товар" ManuallyRouted="false" />
+        <AssociationConnector Association="vadimRabotaetModel.FK_Товар_Страна_произваодителя" ManuallyRouted="false" />
+        <AssociationConnector Association="vadimRabotaetModel.FK_Товар_Фирма" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
