@@ -34,8 +34,8 @@ namespace vadimRabotaet.TypesOfEmployees.Admin
 
 
         }
-
-        #region Загрузка таблиц в comboboxs (WriteCombobox, LoadDataIntoComboBox)
+        #region Товары
+        // TODO <Вкладка: Товары> Загрузка таблиц в comboboxs
         private void WriteCombobox() 
         {
             using (var db = new Entities())
@@ -60,9 +60,8 @@ namespace vadimRabotaet.TypesOfEmployees.Admin
             comboBox.DisplayMemberPath = "Наименование";
             comboBox.SelectedValuePath = "Код";
         }
-        #endregion
 
-        #region Сохранение Товара в базу данных + Получение выбранного элемента из ComboBox + Очистка полей форм 
+        // TODO <Вкладка: Товары> Сохранение Товара в базу данных 
         private void SaveProduct_Click(object sender, RoutedEventArgs e) // Сохранение Товара в базу данных
         {
             try
@@ -124,7 +123,7 @@ namespace vadimRabotaet.TypesOfEmployees.Admin
             //}
         }
 
-        // Извлекаем выбранный элемент из комбо-бокса и получаем значение его свойства "Код".
+        // TODO <Вкладка: Товары> Извлекаем выбранный элемент из комбо-бокса и получаем значение его свойства "Код"
         private int SelectedComboBoxItem<T>(List<T> table, ComboBox combobox)
         {
             var selectedItem = combobox.SelectedItem as object;
@@ -145,7 +144,8 @@ namespace vadimRabotaet.TypesOfEmployees.Admin
             return 0;
         }
 
-        private void ClearingTextFields() // Очистка полей формы
+        // TODO <Вкладка: Товары> Очистка полей формы 
+        private void ClearingTextFields() 
         {
             TbArticulAw.Text = "";
             TbCena.Text = "";
@@ -159,9 +159,7 @@ namespace vadimRabotaet.TypesOfEmployees.Admin
             ImgIzobrazhenieTovara.Source = new BitmapImage(new Uri("Res/Images/NoImage.png", UriKind.Relative));
         }
 
-        #endregion
-
-        #region Проверка и генерация значения артикула по нажатию на текстовое поле
+        // TODO <Вкладка: Товары> Проверка и генерация значения артикула по нажатию на текстовое поле
         private void TextBlock_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             var agbx = new ArticleGenerationMessageBox();
@@ -171,16 +169,13 @@ namespace vadimRabotaet.TypesOfEmployees.Admin
         {
             TbArticulAw.Text = ArticleGenerationMessageBox.EnteredText;
         }
-        #endregion
 
-        #region Работа с изображением 
-
+        // TODO <Вкладка: Товары> Работа с изображением 
         private void Image_Click(object sender, RoutedEventArgs e)
         {
             // Вызываем метод SelectPhoto() 
             SelectPhoto(UpdateSelectedPhoto);
         }
-
         private void UpdateSelectedPhoto(string filePath)
         {
             // Отображаем выбранную фотографию в элементе Image
@@ -190,7 +185,6 @@ namespace vadimRabotaet.TypesOfEmployees.Admin
             // Можно также сохранить байты фотографии в поле класса MainWindow, если они понадобятся для сохранения в базу данных
             _photoBytes = File.ReadAllBytes(filePath);
         }
-
         private static void SelectPhoto(Action<string> onPhotoSelected)
         {
             // Открыть диалог выбора файла фотографии
@@ -206,11 +200,24 @@ namespace vadimRabotaet.TypesOfEmployees.Admin
             }
         }
 
-        #endregion
-
+        // TODO <Вкладка: Товары> Работа с товарами в dataGrid 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
+
+        #endregion
+
+        #region Заказы
+
+        #endregion
+
+        #region Продажи
+
+        #endregion
+
+        #region Сформировать отчёт
+
+        #endregion
     }
 }
