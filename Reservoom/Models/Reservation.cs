@@ -23,6 +23,8 @@ namespace Reservoom.Models
             EndTime = endTime;
         }
 
+        // TODO Проверяем, есть ли конфликты между текущей резервацией и указанной резервацией.
+        // Возвращает true, если есть конфликт, иначе возвращает false.
         public bool Conflicts(Reservation reservation)
         {
             if(reservation.RoomID != RoomID) return false;

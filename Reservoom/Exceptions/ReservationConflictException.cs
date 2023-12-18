@@ -10,8 +10,8 @@ namespace Reservoom.Exceptions
 {
     public class ReservationConflictException : Exception
     {
-        public Reservation ExistingReservation { get; set; }
-        public Reservation IncomingReservation { get; set; }
+        public Reservation ExistingReservation { get; set; } // существующая резервация, которая вызвывает конфликт.
+        public Reservation IncomingReservation { get; set; } // входящая резервация, которая вызывает конфликт.
         public ReservationConflictException(Reservation existingReservation, Reservation incomingReservation)
         {
             ExistingReservation = existingReservation;

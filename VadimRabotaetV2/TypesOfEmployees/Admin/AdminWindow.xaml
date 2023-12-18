@@ -1,10 +1,9 @@
-﻿<Window x:Class="vadimRabotaet.TypesOfEmployees.Admin.AdminWindow"
+﻿<Window x:Class="VadimRabotaetV2.TypesOfEmployees.Admin.AdminWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:vadimRabotaet.TypesOfEmployees.Admin"
-        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:local="clr-namespace:VadimRabotaetV2.TypesOfEmployees.Admin"
         mc:Ignorable="d"
         
         Title="AdminWindow" Height="800" Width="1400" WindowStartupLocation="CenterScreen">
@@ -101,18 +100,16 @@
                             </Style>
                         </Button.Style>
                     </Button>
-                    <DataGrid x:Name="DGproduct" Margin="3,392,3,10" AutoGenerateColumns="False" SelectionChanged="DataGrid_SelectionChanged" >
+                    <DataGrid Margin="3,392,3,10" AutoGenerateColumns="False" SelectionChanged="DataGrid_SelectionChanged" >
                         <DataGrid.Columns>
-                            <DataGridTextColumn Header="Артикул" Width="auto" Binding="{Binding артикул}"/>
-                            <DataGridTextColumn Header="Наименование" Width="auto" Binding="{Binding Наименование}"/>
-                            <DataGridTextColumn Header="Категория" Width="auto" Binding="{Binding Категоря_товров.Наименование}"/>
-                            <DataGridTextColumn Header="Цена" Width="auto" Binding="{Binding Цена}"/>
-                            <DataGridTextColumn Header="Изображение" Width="auto" Binding="{Binding Изображение}"/>
-                            <DataGridTextColumn Header="Ед. изм." Width="auto" Binding="{Binding Ед__измерения.Наименование}"/>
-                            <DataGridTextColumn Header="Изготовлена" Width="auto" Binding="{Binding ДатаИзготовления}"/>
-                            <DataGridTextColumn Header="Годность" Width="auto" Binding="{Binding СрокомГодности}"/>
-                            <DataGridTextColumn Header="Фирма" Width="auto" Binding="{Binding Фирма.Наименование}"/>
-                            <DataGridTextColumn Header="Страна" Width="auto" Binding="{Binding КодСтраныПроизводителя.Наименование}"/>
+                            <DataGridTextColumn Header="Статус заказа" Width="120" Binding="{Binding Статус_заказа.Наименование}"/>
+                            <DataGridTextColumn Header="Дата продажи" Width="150" Binding="{Binding артикул}"/>
+                            <DataGridTextColumn Header="Способ оплаты" Width="135" Binding="{Binding Способ_оплаты.Наименование}"/>
+                            <DataGridTextColumn Header="Имя" Width="*" Binding="{Binding артикул}"/>
+                            <DataGridTextColumn Header="Фамлия" Width="*" Binding="{Binding артикул}"/>
+                            <DataGridTextColumn Header="Отчество" Width="*" Binding="{Binding артикул}"/>
+                            <DataGridTextColumn Header="Адрес" Width="*" Binding="{Binding Адрес.Наименование}"/>
+                            <DataGridTextColumn Header="Изображение штрих кода" Width="220" Binding="{Binding ИзображениеШтрихКода}"/>
                         </DataGrid.Columns>
                     </DataGrid>
                     <Button FontSize="20" FontWeight="DemiBold" Foreground="White" 

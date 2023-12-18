@@ -4,14 +4,14 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
-using vadimRabotaet.DALandDomain;
+using VadimRabotaetV2.DALandDomain;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Windows.Input;
-using vadimRabotaet.TypesOfEmployees.Admin.ProductAdditionFunctions;
+using VadimRabotaetV2.TypesOfEmployees.Admin.ProductAdditionFunctions;
 using System.Diagnostics;
 
-namespace vadimRabotaet.TypesOfEmployees.Admin
+namespace VadimRabotaetV2.TypesOfEmployees.Admin
 {
     /// <summary>
     /// Логика взаимодействия для AdminWindow.xaml
@@ -32,10 +32,6 @@ namespace vadimRabotaet.TypesOfEmployees.Admin
             DpDateIzgotovlenia.SelectedDate = DateTime.Now;
             DpSrokGodnosti.SelectedDate = DateTime.Now.AddYears(1);
 
-            using (var _db = new Entities())
-            {
-                DGproduct.ItemsSource = _db.Товар.ToList();
-            }
 
         }
         #region Товары

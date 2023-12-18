@@ -15,10 +15,14 @@ namespace Reservoom.Models
             Name = name;
             _reservationBook = new ReservationBook();
         }
+
+        // TODO Возвращаем все резервации для указанного пользователя
         public IEnumerable<Reservation> GetReservationsForUser(string userName)
         {
             return _reservationBook.GetReservationsForUser(userName);
         }
+
+        // TODO Добавляем новую резервацию в список резерваций отеля, используя объект ReservationBook.
         public void MakeReservation(Reservation reservation)
         {
             _reservationBook.AddReservation(reservation);

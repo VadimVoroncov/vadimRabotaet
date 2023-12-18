@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vadimRabotaet", "vadimRabot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfUI", "WpfUI\WpfUI.csproj", "{933C0F13-A27D-4B78-81E7-C82F78C55971}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservoom", "Reservoom\Reservoom.csproj", "{8DBD0E07-3C05-48A9-A4DE-9F956214BF27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reservoom", "Reservoom\Reservoom.csproj", "{8DBD0E07-3C05-48A9-A4DE-9F956214BF27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
