@@ -5,10 +5,6 @@ VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vadimRabotaet", "vadimRabotaet\vadimRabotaet.csproj", "{1330889F-AD25-4A9F-9D98-908FB8DD4884}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfUI", "WpfUI\WpfUI.csproj", "{933C0F13-A27D-4B78-81E7-C82F78C55971}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reservoom", "Reservoom\Reservoom.csproj", "{8DBD0E07-3C05-48A9-A4DE-9F956214BF27}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,14 +15,6 @@ Global
 		{1330889F-AD25-4A9F-9D98-908FB8DD4884}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1330889F-AD25-4A9F-9D98-908FB8DD4884}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1330889F-AD25-4A9F-9D98-908FB8DD4884}.Release|Any CPU.Build.0 = Release|Any CPU
-		{933C0F13-A27D-4B78-81E7-C82F78C55971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{933C0F13-A27D-4B78-81E7-C82F78C55971}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{933C0F13-A27D-4B78-81E7-C82F78C55971}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{933C0F13-A27D-4B78-81E7-C82F78C55971}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8DBD0E07-3C05-48A9-A4DE-9F956214BF27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8DBD0E07-3C05-48A9-A4DE-9F956214BF27}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8DBD0E07-3C05-48A9-A4DE-9F956214BF27}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8DBD0E07-3C05-48A9-A4DE-9F956214BF27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
